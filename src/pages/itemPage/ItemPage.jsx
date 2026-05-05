@@ -1,5 +1,6 @@
-import { Minus, Plus } from "lucide-react";
+import { ShoppingBag, ShoppingCart } from "lucide-react";
 import Navbar from "../../components/nav/Navbar";
+import InputQuantidade from "../../components/inputQuantidade/InputQuantidade";
 import "./ItemPage.css";
 
 function ItemPage() {
@@ -7,34 +8,28 @@ function ItemPage() {
     <>
       <Navbar />
       <div className="page-body">
-        <div className="view-produto">
-          <div className="box-produto">
-            <div className="produto-img">imagem uou</div>
+        <div className="product-card">
+          <h3 className="product-title">Título do Produto aaaa</h3>
+          <div className="produto-img">imagem uou</div>
+
+          <div className="price">
+            <p>R$ 200,00</p>
           </div>
-          <h3>Título do Produto aaaa</h3>
-        </div>
-        <div className="view-options">
-          <div className="box-options">
-            <div className="description">
-              <p>D:</p>
-            </div>
-            <div className="action-zone">
-              <button></button>
-              <div className="input-quantidade">
-                <button className="minus-btn">
-                  <Minus />
-                </button>
-                <input
-                  className="inputTeste"
-                  type="number"
-                  min="1"
-                  placeholder="1"
-                />
-                <button className="plus-btn">
-                  <Plus />
-                </button>
-              </div>
-            </div>
+
+          <div className="description">
+            <p>Descrição</p>
+          </div>
+
+          <div className="action-zone">
+            <InputQuantidade />
+
+            <button className="cart-btn">
+              <ShoppingCart />
+            </button>
+
+            <button className="buy-btn">
+              <ShoppingBag />
+            </button>
           </div>
         </div>
       </div>

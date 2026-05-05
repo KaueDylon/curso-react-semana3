@@ -1,4 +1,4 @@
-.page-body {
+.register-page {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f0f2f5;
@@ -9,7 +9,7 @@
   height: 100vh;
 }
 
-.card-login {
+.register-card {
   background: white;
   width: 320px;
   padding: 24px;
@@ -23,56 +23,63 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.card-login h2 {
-  text-align: center;
-  margin: 0;
+.register-card hr {
+  width: 20%;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #333;
 }
 
-.card-inputs {
+.register-card h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.register-inputs {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.card-inputs label {
+.register-inputs label {
   display: flex;
   flex-direction: column;
   font-size: 14px;
 }
 
-.card-inputs input {
+.register-inputs input {
   margin-top: 4px;
   padding: 8px;
   border-radius: 6px;
   border: 1px solid #ccc;
 }
 
-.card-inputs input:focus {
+.register-inputs input:focus {
   outline: none;
   border-color: grey;
 }
 
-.btn-entrar {
+.register-btn-primary {
   padding: 10px;
   border: none;
   border-radius: 6px;
-  background: #007bff;
+  background: #333;
   color: white;
   cursor: pointer;
   font-weight: bold;
 }
 
-.btn-entrar:hover {
-  background: #0056b3;
+.register-btn-primary:hover {
+  background: grey;
 }
 
-.btn-criar-conta {
+.register-link {
   text-align: center;
   font-size: 14px;
-  color: #007bff;
+  color: grey;
   text-decoration: none;
 }
 
-.btn-criar-conta:hover {
+.register-link:hover {
   text-decoration: underline;
 }

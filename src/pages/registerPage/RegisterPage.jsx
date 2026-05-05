@@ -1,16 +1,18 @@
 import "./RegisterPage.css";
+import { Link } from "react-router-dom";
 
 function RegisterPage() {
   return (
     <>
-      <div className="page-body">
-        <div className="card-login">
+      <div className="register-page">
+        <div className="register-card">
           <div>
             <h2>Bem-vindo ao Compraki</h2>
+            <hr />
             <h2>Crie agora mesmo a sua conta</h2>
           </div>
 
-          <div className="card-inputs">
+          <div className="register-inputs">
             <label>
               Nome
               <input type="text" placeholder="Ex: Júlio Guedes..." />
@@ -25,10 +27,11 @@ function RegisterPage() {
             </label>
           </div>
 
-          <button className="btn-entrar">Criar</button>
-          <a className="btn-criar-conta" href="">
-            Entrar com sua conta
-          </a>
+          <button className="register-btn-primary">Criar</button>
+
+          <Link className="register-link" to="/login">
+            Encontrar com sua conta
+          </Link>
         </div>
       </div>
     </>

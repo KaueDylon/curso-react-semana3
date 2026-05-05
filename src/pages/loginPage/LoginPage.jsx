@@ -1,5 +1,7 @@
 import "./LoginPage.css";
 
+import { Link } from "react-router-dom";
+
 function LoginPage() {
   return (
     <>
@@ -7,6 +9,7 @@ function LoginPage() {
         <div className="card-login">
           <div>
             <h2>Bem-vindo ao Compraki</h2>
+            <hr />
           </div>
 
           <div className="card-inputs">
@@ -21,9 +24,10 @@ function LoginPage() {
           </div>
 
           <button className="btn-entrar">Entrar</button>
-          <a className="btn-criar-conta" href="">
+
+          <Link className="btn-criar-conta" to="/cadastro">
             Criar uma conta
-          </a>
+          </Link>
         </div>
       </div>
     </>

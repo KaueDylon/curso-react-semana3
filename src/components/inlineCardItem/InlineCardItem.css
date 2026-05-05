@@ -1,0 +1,85 @@
+.inline-card-body {
+  display: flex;
+  gap: 16px;
+
+  width: 100%;
+  max-width: 400px;
+
+  padding: 12px;
+  border-radius: 10px;
+
+  background: #f5f5f5; /* cinza claro */
+  border: 1px solid #dcdcdc;
+
+  align-items: center;
+
+  transition: 0.2s ease;
+}
+
+.inline-card-body:hover {
+  background: #eeeeee;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGEM */
+.inline-produto-img {
+  width: 100px;
+  height: 100px;
+  background: #d0d0d0;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* CONTEÚDO */
+.inline-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex: 1;
+  height: 100%;
+}
+
+/* INFO */
+.inline-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333; /* cinza escuro pra contraste */
+}
+
+.product-price {
+  font-size: 13px;
+  color: #777;
+}
+
+/* AÇÕES */
+.inline-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+/* BOTÃO DELETE */
+.delete-btn {
+  background: #e0e0e0;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+
+  cursor: pointer;
+  color: #555;
+
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background: #d5d5d5;
+  color: #222;
+}

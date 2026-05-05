@@ -1,0 +1,94 @@
+.cart-page {
+  padding: 24px;
+  background: #f2f2f2;
+  min-height: 100vh;
+}
+
+.cart-page-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+/* TÍTULO */
+.cart-title {
+  margin-bottom: 0;
+  background: #e0e0e0;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.cart-page-top button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px;
+  border: none;
+  background: #e0e0e0;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+/* LAYOUT PRINCIPAL */
+.cart-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* LISTA DE ITENS */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: grey;
+  padding: 20px;
+  border-radius: 10px;
+
+  flex: 2;
+}
+
+/* RESUMO */
+.cart-summary {
+  flex: 1;
+
+  background: #e5e5e5;
+  padding: 16px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  height: fit-content;
+}
+
+/* TOTAL */
+.cart-total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* BOTÃO */
+.btn-confirm {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+
+  background: #444;
+  color: white;
+
+  cursor: pointer;
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+.btn-confirm:hover {
+  background: #222;
+}

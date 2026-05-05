@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Searchbox from "../searchBox/Searchbox";
 import "./Navbar.css";
 import { ShoppingCart, SquareArrowRightExit } from "lucide-react";
@@ -11,12 +12,14 @@ function Navbar() {
         <div>
           <Searchbox />
         </div>
-        <button className="nav-btn">
+
+        <NavLink className="nav-btn" to="/carrinho">
           <ShoppingCart />
-        </button>
-        <button className="nav-btn">
+        </NavLink>
+
+        <NavLink className="nav-btn" to="/login">
           <SquareArrowRightExit />
-        </button>
+        </NavLink>
       </ul>
     </nav>
   );

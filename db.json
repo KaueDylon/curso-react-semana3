@@ -1,3 +1,60 @@
 {
-  "posts": [{ "id": "1", "title": "Hello World" }]
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Mouse",
+      "preco": "10,00",
+      "desc": "Um mouse, uou",
+      "quantd": 15
+    },
+    {
+      "id": "2",
+      "nome": "Teclado",
+      "preco": "45,90",
+      "desc": "Teclado mecânico ABNT2",
+      "quantd": 10
+    },
+    {
+      "id": "3",
+      "nome": "Monitor",
+      "preco": "899,99",
+      "desc": "Monitor LED 24 polegadas",
+      "quantd": 5
+    },
+    {
+      "id": "4",
+      "nome": "Notebook",
+      "preco": "3500,00",
+      "desc": "Notebook com 16GB RAM e SSD 512GB",
+      "quantd": 3
+    },
+    {
+      "id": "5",
+      "nome": "Headset",
+      "preco": "120,50",
+      "desc": "Headset gamer com microfone",
+      "quantd": 8
+    },
+    {
+      "id": "6",
+      "nome": "Webcam",
+      "preco": "210,00",
+      "desc": "Webcam Full HD 1080p",
+      "quantd": 6
+    },
+    {
+      "id": "7",
+      "nome": "Mousepad",
+      "preco": "25,00",
+      "desc": "Mousepad grande antiderrapante",
+      "quantd": 20
+    },
+    {
+      "id": "8",
+      "nome": "HD Externo",
+      "preco": "420,00",
+      "desc": "HD externo 1TB USB 3.0",
+      "quantd": 4
+    }
+  ]
 }

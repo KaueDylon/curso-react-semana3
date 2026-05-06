@@ -29,8 +29,13 @@
   justify-content: center;
 }
 
-.product-title {
-  font-size: 18px;
+/* .product-title {
+  font-size: 30px;
+  font-weight: 600;
+} */
+
+.product-stock-label {
+  font-size: 14px;
   font-weight: 600;
 }
 

@@ -9,6 +9,14 @@
   text-align: center;
 }
 
+.minus-btn {
+  cursor: pointer;
+}
+
+.plus-btn {
+  cursor: pointer;
+}
+
 /* para remover os spin buttons do input number */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {

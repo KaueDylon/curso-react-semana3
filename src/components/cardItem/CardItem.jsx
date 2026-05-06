@@ -1,4 +1,5 @@
-import { ArrowRight, ShoppingBasket } from "lucide-react";
+import { ArrowRight, ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 import "./CardItem.css";
 
 function CardItem({ data }) {
@@ -12,11 +13,12 @@ function CardItem({ data }) {
           </div>
           <div className="item-options-right">
             <button className="card-btns">
-              <ShoppingBasket />
+              <ShoppingCart />
             </button>
-            <button className="card-btns">
+
+            <Link className="card-btns" to={`/produto/${data.id}`}>
               <ArrowRight />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -89,6 +89,107 @@
       "password": "$2a$10$3BpEjsgi2uBjYFARNwmsq.7qCrWR0Vgu58NQqwVt0.8EHi.MeqcXe",
       "nome": "Caio Mengo",
       "id": 6
+    },
+    {
+      "email": "caio@email",
+      "password": "$2a$10$RIlKuPK.RgvUsSMe34Nxgev9MCdNvqe.WM1pKa3s19HZEcer9VAbW",
+      "nome": "Caioba",
+      "id": 7
+    }
+  ],
+  "user-cart": [
+    {
+      "produtoId": 4,
+      "id": 1
+    },
+    {
+      "produtoId": 7,
+      "id": 2
+    },
+    {
+      "produtoId": 3,
+      "id": 3
+    },
+    {
+      "produtoId": 2,
+      "id": 4
+    },
+    {
+      "user-id": 7,
+      "produtoId": 3,
+      "id": 5
+    },
+    {
+      "produtoId": 3,
+      "id": 6
+    },
+    {
+      "produtoId": 3,
+      "id": 7
+    },
+    {
+      "produtoId": 1,
+      "id": 8
+    },
+    {
+      "user-id": 7,
+      "produtoId": 1,
+      "id": 9
+    },
+    {
+      "produtoId": 1,
+      "id": 10
+    },
+    {
+      "produtoId": 1,
+      "id": 11
+    },
+    {
+      "produtoId": 1,
+      "id": 12
+    },
+    {
+      "produtoId": 1,
+      "id": 13
+    },
+    {
+      "produtoId": 1,
+      "id": 14
+    },
+    {
+      "user-id": 7,
+      "produtoId": 2,
+      "id": 15
+    },
+    {
+      "user-id": 7,
+      "produtoId": 2,
+      "id": 16
+    },
+    {
+      "user-id": 7,
+      "produtoId": 2,
+      "id": 17
+    },
+    {
+      "user-id": 7,
+      "produtoId": 2,
+      "id": 18
+    },
+    {
+      "user-id": 7,
+      "produtoId": 2,
+      "id": 19
+    },
+    {
+      "userId": 7,
+      "produtoId": 2,
+      "id": 20
+    },
+    {
+      "userId": 7,
+      "produtoId": 2,
+      "id": 21
     }
   ]
 }

@@ -3,7 +3,6 @@ import InlineCardItem from "../../components/inlineCardItem/inlineCardItem";
 import Navbar from "../../components/nav/Navbar";
 import "./ShopCartPage.css";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
 function ShopCartPage() {
   return (

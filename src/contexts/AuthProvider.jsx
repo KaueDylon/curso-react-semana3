@@ -5,7 +5,8 @@ import { api } from "../api/api";
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(() => {
     const token = localStorage.getItem("token");
-    return token ? { token } : null;
+    const userApi = JSON.parse(localStorage.getItem("user"));
+    return token && userApi ? { token, user: userApi } : null;
   });
 
   const [loading, setLoading] = useState(false);
@@ -31,6 +32,8 @@ export function AuthProvider({ children }) {
       const data = await api.post("/login", { email, password });
 
       localStorage.setItem("token", data.accessToken);
+      localStorage.setItem("user", JSON.stringify(data.user));
+      // console.log(data.user);
 
       setUser(data.user);
 

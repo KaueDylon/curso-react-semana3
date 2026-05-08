@@ -4,10 +4,16 @@ import InputQuantidade from "../../components/inputQuantidade/InputQuantidade";
 import "./ItemPage.css";
 import { useParams } from "react-router-dom";
 import useItemId from "../../hooks/useItemId";
+import { useCart } from "../../contexts/CarrinhoContext";
 
 function ItemPage() {
   const { id } = useParams();
   const item = useItemId(id);
+  const { addToCart } = useCart();
+
+  function handleAdd(id) {
+    addToCart(id);
+  }
 
   if (!item) {
     return (
@@ -38,7 +44,7 @@ function ItemPage() {
             <p className="product-stock-label">Em Estoque: {item.quantd}</p>
             <InputQuantidade estoque={item.quantd} />
 
-            <button className="cart-btn">
+            <button className="cart-btn" onClick={() => handleAdd(item.id)}>
               <ShoppingCart />
             </button>
 

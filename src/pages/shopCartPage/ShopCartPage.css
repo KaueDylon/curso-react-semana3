@@ -48,6 +48,10 @@
   background-color: grey;
   padding: 20px;
   border-radius: 10px;
+  max-height: 430px;
+
+  overflow-y: scroll;
+  overflow: auto;
 
   flex: 2;
 }

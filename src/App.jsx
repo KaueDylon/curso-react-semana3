@@ -7,7 +7,7 @@ function App() {
   return (
     <AuthProvider>
       <CarrinhoProvider>
-        <RouterProvider router={router} />;
+        <RouterProvider router={router} />
       </CarrinhoProvider>
     </AuthProvider>
   );

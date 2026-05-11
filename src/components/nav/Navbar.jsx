@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Searchbox from "../searchBox/Searchbox";
 import "./Navbar.css";
 import {
   ShoppingCart,
@@ -22,10 +21,6 @@ function Navbar() {
       <div className="logo">Compraki</div>
 
       <ul className="menu">
-        <div>
-          <Searchbox />
-        </div>
-
         <NavLink className="nav-btn" to="/carrinho">
           <ShoppingCart />
         </NavLink>

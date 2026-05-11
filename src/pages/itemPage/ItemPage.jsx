@@ -30,7 +30,9 @@ function ItemPage() {
       <div className="page-body">
         <div className="product-card">
           <h2 className="product-title">{item.nome}</h2>
-          <div className="produto-img">imagem uou</div>
+          <div className="produto-img">
+            <img src={item.img} alt={item.alt} />
+          </div>
 
           <div className="price">
             <p>R${item.preco}</p>

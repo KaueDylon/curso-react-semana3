@@ -111,6 +111,12 @@
       "password": "$2a$10$RIlKuPK.RgvUsSMe34Nxgev9MCdNvqe.WM1pKa3s19HZEcer9VAbW",
       "nome": "Caioba",
       "id": 7
+    },
+    {
+      "email": "kau@email",
+      "password": "$2a$10$fCGAXn68TcuEhi5PxMHwuuc66JAB546G1LQD0JNLXHUrxvQMjf3Tq",
+      "nome": "kaue",
+      "id": 8
     }
   ],
   "user-cart": [
@@ -128,15 +134,9 @@
     },
     {
       "userId": 7,
-      "produtoId": 6,
-      "produtoImg": "https://th.bing.com/th/id/OIP.PHPxnJEAvLuIhJDn6Sj08QHaHa?w=151&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+      "produtoId": 8,
+      "produtoImg": "https://th.bing.com/th/id/OIP.veDm9dDAxqUKAZGu7UMq7QAAAA?w=244&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
       "id": 34
-    },
-    {
-      "userId": 7,
-      "produtoId": 7,
-      "produtoImg": "https://m.media-amazon.com/images/I/41ztoBDz-QL._AC_SL1000_.jpg",
-      "id": 35
     }
   ]
 }

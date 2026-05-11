@@ -15,6 +15,10 @@
   background-color: white;
 }
 
+.card-item-img img {
+  width: 100px;
+}
+
 .card-item-options {
   display: flex;
   justify-content: space-between;

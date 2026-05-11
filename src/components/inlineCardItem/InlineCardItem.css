@@ -28,6 +28,13 @@
   background: #d0d0d0;
   border-radius: 8px;
   flex-shrink: 0;
+  justify-items: center;
+  justify-content: center;
+}
+
+.inline-produto-img img {
+  width: 100%;
+  height: 100%;
 }
 
 /* CONTEÚDO */

@@ -3,8 +3,15 @@ import InlineCardItem from "../../components/inlineCardItem/inlineCardItem";
 import Navbar from "../../components/nav/Navbar";
 import "./ShopCartPage.css";
 import { Link } from "react-router-dom";
+import { useCart } from "../../contexts/CarrinhoContext";
 
 function ShopCartPage() {
+  const { carrinho } = useCart();
+
+  const total = carrinho.reduce((acc, item) => {
+    return acc + Number(item.produto.preco.replace(",", "."));
+  }, 0);
+
   return (
     <>
       <Navbar />
@@ -19,15 +26,14 @@ function ShopCartPage() {
 
         <div className="cart-layout">
           <div className="cart-items">
-            <InlineCardItem />
-            <InlineCardItem />
-            <InlineCardItem />
-            <InlineCardItem />
+            {carrinho.map((data) => (
+              <InlineCardItem key={data.id} data={data} />
+            ))}
           </div>
 
           <div className="cart-summary">
             <h3>Total</h3>
-            <p className="cart-total">R$ 600,00</p>
+            <p className="cart-total">R$ {total.toFixed(2)}</p>
 
             <button className="btn-confirm">Confirmar compra</button>
           </div>

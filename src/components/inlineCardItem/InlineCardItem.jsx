@@ -1,23 +1,35 @@
 import { TrashIcon } from "lucide-react";
 import InputQuantidade from "../../components/inputQuantidade/InputQuantidade";
 import "./InlineCardItem.css";
+import { useCart } from "../../contexts/CarrinhoContext";
 
-function InlineCardItem() {
+function InlineCardItem({ data }) {
+  const { removeFromCart } = useCart();
+
+  function handleDelete(id) {
+    removeFromCart(id);
+  }
+
   return (
     <>
       <div className="inline-card-body">
-        <div className="inline-produto-img">imagem uou</div>
+        <div className="inline-produto-img">
+          <img src={data.produto.img} alt={data.produto.alt} />
+        </div>
 
         <div className="inline-content">
           <div className="inline-info">
-            <p className="product-title">Título do Produto aaa</p>
-            <p className="product-price">R$ 300,00</p>
+            <p className="product-title">{data.produto.nome}</p>
+            <p className="product-price">R$ {data.produto.preco}</p>
           </div>
 
           <div className="inline-actions">
             <InputQuantidade />
 
-            <button className="delete-btn">
+            <button
+              className="delete-btn"
+              onClick={() => handleDelete(data.id)}
+            >
               <TrashIcon />
             </button>
           </div>

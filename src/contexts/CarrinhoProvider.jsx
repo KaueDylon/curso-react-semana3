@@ -6,17 +6,18 @@ import { useAuth } from "./AuthProvider";
 function CarrinhoProvider({ children }) {
   const [loading, setLoading] = useState(false);
   const [carrinho, setCarrinho] = useState([]);
+  // console.log(user.user.id);
 
   const { user } = useAuth();
   async function fetchCart() {
-    console.log(user.user.id);
+    // console.log(user.user.id);
     if (!user) return;
 
     setLoading(true);
 
     try {
       const data = await api.get(
-        `/user-cart?user-id=${user.user.id}&_expand=produto`,
+        `/user-cart?userId=${user.user.id}&_expand=produto`,
       );
 
       setCarrinho(data);
@@ -27,11 +28,12 @@ function CarrinhoProvider({ children }) {
     }
   }
 
-  async function addToCart(produtoId) {
+  async function addToCart(produtoId, produtoImg) {
     try {
       await api.post("/user-cart", {
         userId: user.user.id,
         produtoId: produtoId,
+        produtoImg: produtoImg,
       });
 
       await fetchCart();

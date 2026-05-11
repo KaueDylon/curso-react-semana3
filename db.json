@@ -75,9 +75,10 @@
   ],
   "users": [
     {
-      "email": "teste@teste.com",
+      "email": "teste@oi",
       "password": "$2a$10$3FJLtEzKWMtOrK4RoUOZD.jPhycb0OoSk3oo8RIROgSULTe3R1Fx6",
-      "id": 1
+      "id": 1,
+      "nome": "Fulano da Silvinha"
     },
     {
       "email": "kauezin@teste.com",
@@ -123,20 +124,22 @@
     {
       "userId": 7,
       "produtoId": 1,
+      "id": 1,
+      "produtoQntd": 6
+    },
+    {
+      "userId": 7,
+      "produtoId": 1,
       "produtoImg": "https://www.bing.com/th?id=OPHS.h6ahFGUbsZu3%2fA474C474&o=5&pid=21.1&w=128&h=188&qlt=100&dpr=1,5&o=2&bw=6&bc=FFFFFF",
-      "id": 32
+      "produtoQntd": 2,
+      "id": 2
     },
     {
       "userId": 7,
-      "produtoId": 4,
-      "produtoImg": "https://m.media-amazon.com/images/I/51Mkce7BiZL._AC_SX679_.jpg",
-      "id": 33
-    },
-    {
-      "userId": 7,
-      "produtoId": 8,
-      "produtoImg": "https://th.bing.com/th/id/OIP.veDm9dDAxqUKAZGu7UMq7QAAAA?w=244&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
-      "id": 34
+      "produtoId": 2,
+      "produtoImg": "https://tse2.mm.bing.net/th/id/OIP.EnB0MR-vSGTvY9UFGWiQnwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+      "produtoQntd": 3,
+      "id": 3
     }
   ]
 }

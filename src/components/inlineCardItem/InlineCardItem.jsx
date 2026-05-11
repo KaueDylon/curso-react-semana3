@@ -4,7 +4,19 @@ import "./InlineCardItem.css";
 import { useCart } from "../../contexts/CarrinhoContext";
 
 function InlineCardItem({ data }) {
-  const { removeFromCart } = useCart();
+  const { removeFromCart, patchQuantdFromCart } = useCart();
+
+  function adicionar() {
+    const numAdicionar = Math.min(data.produtoQntd + 1, data.produto.quantd);
+    console.log(numAdicionar);
+    patchQuantdFromCart(data.id, numAdicionar);
+  }
+
+  function diminuir() {
+    const numDiminuir = Math.max(data.produtoQntd - 1, 1);
+    console.log(numDiminuir);
+    patchQuantdFromCart(data.id, numDiminuir);
+  }
 
   function handleDelete(id) {
     removeFromCart(id);
@@ -24,7 +36,11 @@ function InlineCardItem({ data }) {
           </div>
 
           <div className="inline-actions">
-            <InputQuantidade />
+            <InputQuantidade
+              quantidadeAtual={data.produtoQntd}
+              diminuir={diminuir}
+              adicionar={adicionar}
+            />
 
             <button
               className="delete-btn"

@@ -9,7 +9,9 @@ function ShopCartPage() {
   const { carrinho } = useCart();
 
   const total = carrinho.reduce((acc, item) => {
-    return acc + Number(item.produto.preco.replace(",", "."));
+    return (
+      acc + Number(item.produto.preco.replace(",", ".") * item.produtoQntd)
+    );
   }, 0);
 
   return (

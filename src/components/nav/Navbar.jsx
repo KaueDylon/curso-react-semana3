@@ -18,7 +18,10 @@ function Navbar() {
   }
   return (
     <nav className="navbar">
-      <div className="logo">Compraki</div>
+      <NavLink className="logo" to="/">
+        Compraki
+      </NavLink>
+      {/* <div className="logo">Compraki</div> */}
 
       <ul className="menu">
         <NavLink className="nav-btn" to="/carrinho">

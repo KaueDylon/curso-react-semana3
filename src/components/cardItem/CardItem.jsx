@@ -5,8 +5,8 @@ import { useCart } from "../../contexts/CarrinhoContext";
 
 function CardItem({ data }) {
   const { addToCart } = useCart();
-  function handleAdd(id, img) {
-    addToCart(id, img);
+  function handleAdd(id, img, qnt) {
+    addToCart(id, img, qnt);
   }
 
   return (
@@ -23,7 +23,7 @@ function CardItem({ data }) {
           <div className="item-options-right">
             <button
               className="card-btns"
-              onClick={() => handleAdd(data.id, data.img)}
+              onClick={() => handleAdd(data.id, data.img, 1)}
             >
               <ShoppingCart />
             </button>

@@ -2,17 +2,7 @@ import { Minus, Plus } from "lucide-react";
 import "./InputQuantidade.css";
 import { useState } from "react";
 
-function InputQuantidade({ estoque }) {
-  const [quantidade, setQuantidade] = useState(1);
-
-  function adicionar() {
-    setQuantidade((num) => Math.min(num + 1, estoque));
-  }
-
-  function diminuir() {
-    setQuantidade((num) => Math.max(num - 1, 1));
-  }
-
+function InputQuantidade({ quantidadeAtual, adicionar, diminuir }) {
   return (
     <>
       <div className="input-quantidade">
@@ -23,9 +13,9 @@ function InputQuantidade({ estoque }) {
         <input
           className="inputTeste"
           type="number"
-          min="1"
-          value={quantidade}
-          placeholder="1"
+          // min="1"
+          value={quantidadeAtual}
+          // placeholder="1"
           readOnly
         />
 

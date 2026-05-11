@@ -28,12 +28,13 @@ function CarrinhoProvider({ children }) {
     }
   }
 
-  async function addToCart(produtoId, produtoImg) {
+  async function addToCart(produtoId, produtoImg, produtoQntd) {
     try {
       await api.post("/user-cart", {
         userId: user.user.id,
         produtoId: produtoId,
         produtoImg: produtoImg,
+        produtoQntd: produtoQntd,
       });
 
       await fetchCart();
@@ -52,6 +53,17 @@ function CarrinhoProvider({ children }) {
     }
   }
 
+  async function patchQuantdFromCart(cartItemId, itemQuantidade) {
+    try {
+      await api.patch(`/user-cart/${cartItemId}`, {
+        produtoQntd: itemQuantidade,
+      });
+      await fetchCart();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   useEffect(() => {
     fetchCart();
   }, [user]);
@@ -63,6 +75,7 @@ function CarrinhoProvider({ children }) {
         loading,
         addToCart,
         removeFromCart,
+        patchQuantdFromCart,
         fetchCart,
       }}
     >

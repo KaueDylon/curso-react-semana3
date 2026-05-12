@@ -1,6 +1,6 @@
 # 📋 E-Commerce Compraki
 
-Projeto desenvolvido com **React (Vite) + TailwindCSS + JSON Server Auth** com o objetivo de praticar mais conceitos fundamentais de front-end, como componentização, gerenciamento de estado, sessão e consumo de API.
+Projeto desenvolvido com **React (Vite) + CSS + JSON Server Auth** com o objetivo de praticar mais conceitos fundamentais de front-end, como componentização, gerenciamento de estado, sessão e consumo de API.
 
 ---
 
@@ -28,7 +28,7 @@ Projeto desenvolvido com **React (Vite) + TailwindCSS + JSON Server Auth** com o
 ## 🛠️ Tecnologias utilizadas
 
 - React
-- TailwindCSS
+- CSS
 - json-server-auth
 - Lucide Icons
 

@@ -1,16 +1,57 @@
-# React + Vite
+# 📋 E-Commerce Compraki
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido com **React (Vite) + TailwindCSS + JSON Server Auth** com o objetivo de praticar mais conceitos fundamentais de front-end, como componentização, gerenciamento de estado, sessão e consumo de API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Funcionalidades
 
-## React Compiler
+- ✅ Menu de Login e Cadastro
+- ✏️ Logout
+- 🗑️ Carrinho de Compras
+- 🔍 Listagem de Produtos
+- 📡 Integração com API fake usando json-server-auth
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Conceitos praticados
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Componentes reutilizáveis
+- Props e comunicação entre componentes
+- Hooks do React:
+  - `useState`
+  - `useEffect`
+- Consumo de API com `fetch`
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- React
+- TailwindCSS
+- json-server-auth
+- Lucide Icons
+
+---
+
+## ▶️ Como rodar o projeto
+
+### 1. Instale as dependências do projeto:
+
+```bash
+npm install
+```
+
+### 2. Inicie a dependência na porta correta:
+
+```bash
+npx json-server-auth --watch db.json --port 3000
+```
+
+obs: a porta padrão do json-server sempre é a 3000.
+
+### 3. Rode o projeto React:
+
+```bash
+npm run dev
+```

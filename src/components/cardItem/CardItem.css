@@ -1,22 +1,31 @@
 .card-body {
   display: flex;
   flex-direction: column;
-  height: 240px;
+  height: 260px;
   width: 200px;
   background-color: grey;
-  border: 1px solid black;
+  border: 3px solid #c9c7c7;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .card-item-img {
-  flex: 1;
+  flex: 4;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
+  border-radius: 10px;
+}
+
+.card-item-title {
+  flex: 1;
+  color: white;
+  font-weight: bold;
 }
 
 .card-item-img img {
-  width: 100px;
+  max-width: 80px;
 }
 
 .card-item-options {
@@ -24,6 +33,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px;
+}
+
+.item-price {
+  color: white;
+  font-weight: bold;
 }
 
 .item-options-right {

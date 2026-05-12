@@ -12,6 +12,7 @@ function CardItem({ data }) {
   return (
     <>
       <div className="card-body">
+        <div className="card-item-title">{data.nome}</div>
         <div className="card-item-img">
           <img src={data.img} alt={data.alt} />
         </div>

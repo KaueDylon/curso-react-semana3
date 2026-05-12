@@ -18,7 +18,7 @@ export function AuthProvider({ children }) {
 
       localStorage.setItem("token", data.accessToken);
 
-      setUser(data.user);
+      setUser({ token: data.acessToken, user: data.user });
 
       return data;
     } finally {
@@ -35,7 +35,7 @@ export function AuthProvider({ children }) {
       localStorage.setItem("user", JSON.stringify(data.user));
       // console.log(data.user);
 
-      setUser(data.user);
+      setUser({ token: data.acessToken, user: data.user });
 
       return data;
     } finally {
@@ -45,7 +45,9 @@ export function AuthProvider({ children }) {
 
   const logout = useCallback(() => {
     setUser(null);
+
     localStorage.removeItem("token");
+    localStorage.removeItem("user");
   }, []);
 
   return (

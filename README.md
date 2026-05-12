@@ -6,10 +6,10 @@ Projeto desenvolvido com **React (Vite) + TailwindCSS + JSON Server Auth** com o
 
 ## 🚀 Funcionalidades
 
-- ✅ Menu de Login e Cadastro
-- ✏️ Logout
-- 🗑️ Carrinho de Compras
-- 🔍 Listagem de Produtos
+- 👤 Menu de Login e Cadastro
+- 🚪 Logout
+- 🛒 Carrinho de Compras
+- 📦 Listagem de Produtos
 - 📡 Integração com API fake usando json-server-auth
 
 ---
